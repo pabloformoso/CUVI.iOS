@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'CursoObjC' target in the 'CursoObjC' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import "NSString+QQCCMH.h"
+#endif
