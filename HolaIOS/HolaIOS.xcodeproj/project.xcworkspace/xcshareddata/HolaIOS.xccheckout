@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F68C3389-EA7B-48A3-8862-1FD1B3DD084A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HolaIOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>19CD891E-E207-4916-935D-3037D347906D</key>
+		<string>https://github.com/pabloformoso/CUVI.iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HolaIOS/HolaIOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>19CD891E-E207-4916-935D-3037D347906D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pabloformoso/CUVI.iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>19CD891E-E207-4916-935D-3037D347906D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>19CD891E-E207-4916-935D-3037D347906D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CursoUDV</string>
+		</dict>
+	</array>
+</dict>
+</plist>
