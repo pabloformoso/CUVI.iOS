@@ -1,0 +1,28 @@
+<div class="twelve column">
+  <h1>Alumnos</h1>
+  <%= link_to 'Agregar', new_stundent_path, :class => "small radius button" %>
+  <br /><br />
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>City</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @stundents.each do |stundent| %>
+    <tr>
+      <td><%= stundent.name %></td>
+      <td><%= stundent.lastname %></td>
+      <td><%= stundent.city %></td>
+      <td><%= stundent.email %></td>
+      <td><%= link_to 'Show', stundent %></td>
+      <td><%= link_to 'Edit', edit_stundent_path(stundent) %></td>
+      <td><%= link_to 'Destroy', stundent, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>

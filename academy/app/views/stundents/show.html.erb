@@ -1,0 +1,25 @@
+<div class="eight columns">
+  <p id="notice"><%= notice %></p>
+  <p>
+    <b>Name:</b>
+    <%= @stundent.name %>
+  </p>
+  <p>
+    <b>Lastname:</b>
+    <%= @stundent.lastname %>
+  </p>
+  <p>
+    <b>City:</b>
+    <%= @stundent.city %>
+  </p>
+  <p>
+    <b>Email:</b>
+    <%= @stundent.email %>
+  </p>
+</div>
+<div class="four columns">
+  <%= image_tag @stundent.avatar.url(:medium) %>
+</div>
+
+<%= link_to 'Edit', edit_stundent_path(@stundent) %> |
+<%= link_to 'Back', stundents_path %>

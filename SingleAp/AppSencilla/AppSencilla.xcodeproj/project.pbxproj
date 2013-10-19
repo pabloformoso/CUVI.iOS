@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EAE1859181186B8006D37EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAE1858181186B8006D37EA /* UIKit.framework */; };
+		6EAE185B181186B8006D37EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAE185A181186B8006D37EA /* Foundation.framework */; };
+		6EAE185D181186B8006D37EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAE185C181186B8006D37EA /* CoreGraphics.framework */; };
+		6EAE1863181186B8006D37EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE1861181186B8006D37EA /* InfoPlist.strings */; };
+		6EAE1865181186B8006D37EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE1864181186B8006D37EA /* main.m */; };
+		6EAE1869181186B8006D37EA /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE1868181186B8006D37EA /* SWAppDelegate.m */; };
+		6EAE186B181186B8006D37EA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE186A181186B8006D37EA /* Default.png */; };
+		6EAE186D181186B8006D37EA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE186C181186B8006D37EA /* Default@2x.png */; };
+		6EAE186F181186B8006D37EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE186E181186B8006D37EA /* Default-568h@2x.png */; };
+		6EAE1872181186B8006D37EA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAE1870181186B8006D37EA /* MainStoryboard.storyboard */; };
+		6EAE1875181186B8006D37EA /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE1874181186B8006D37EA /* SWViewController.m */; };
+		6EAE187D1811975E006D37EA /* SWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE187C1811975E006D37EA /* SWSecondViewController.m */; };
+		6EAE18801811AAA7006D37EA /* SWModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE187F1811AAA7006D37EA /* SWModalViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EAE1855181186B8006D37EA /* AppSencilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSencilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAE1858181186B8006D37EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EAE185A181186B8006D37EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EAE185C181186B8006D37EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EAE1860181186B8006D37EA /* AppSencilla-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppSencilla-Info.plist"; sourceTree = "<group>"; };
+		6EAE1862181186B8006D37EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EAE1864181186B8006D37EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EAE1866181186B8006D37EA /* AppSencilla-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppSencilla-Prefix.pch"; sourceTree = "<group>"; };
+		6EAE1867181186B8006D37EA /* SWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWAppDelegate.h; sourceTree = "<group>"; };
+		6EAE1868181186B8006D37EA /* SWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAppDelegate.m; sourceTree = "<group>"; };
+		6EAE186A181186B8006D37EA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6EAE186C181186B8006D37EA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6EAE186E181186B8006D37EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6EAE1871181186B8006D37EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6EAE1873181186B8006D37EA /* SWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
+		6EAE1874181186B8006D37EA /* SWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
+		6EAE187B1811975E006D37EA /* SWSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSecondViewController.h; sourceTree = "<group>"; };
+		6EAE187C1811975E006D37EA /* SWSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSecondViewController.m; sourceTree = "<group>"; };
+		6EAE187E1811AAA7006D37EA /* SWModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWModalViewController.h; sourceTree = "<group>"; };
+		6EAE187F1811AAA7006D37EA /* SWModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWModalViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EAE1852181186B8006D37EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAE1859181186B8006D37EA /* UIKit.framework in Frameworks */,
+				6EAE185B181186B8006D37EA /* Foundation.framework in Frameworks */,
+				6EAE185D181186B8006D37EA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EAE184C181186B8006D37EA = {
+			isa = PBXGroup;
+			children = (
+				6EAE185E181186B8006D37EA /* AppSencilla */,
+				6EAE1857181186B8006D37EA /* Frameworks */,
+				6EAE1856181186B8006D37EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EAE1856181186B8006D37EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EAE1855181186B8006D37EA /* AppSencilla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EAE1857181186B8006D37EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EAE1858181186B8006D37EA /* UIKit.framework */,
+				6EAE185A181186B8006D37EA /* Foundation.framework */,
+				6EAE185C181186B8006D37EA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EAE185E181186B8006D37EA /* AppSencilla */ = {
+			isa = PBXGroup;
+			children = (
+				6EAE1867181186B8006D37EA /* SWAppDelegate.h */,
+				6EAE1868181186B8006D37EA /* SWAppDelegate.m */,
+				6EAE1870181186B8006D37EA /* MainStoryboard.storyboard */,
+				6EAE1873181186B8006D37EA /* SWViewController.h */,
+				6EAE1874181186B8006D37EA /* SWViewController.m */,
+				6EAE185F181186B8006D37EA /* Supporting Files */,
+				6EAE187B1811975E006D37EA /* SWSecondViewController.h */,
+				6EAE187C1811975E006D37EA /* SWSecondViewController.m */,
+				6EAE187E1811AAA7006D37EA /* SWModalViewController.h */,
+				6EAE187F1811AAA7006D37EA /* SWModalViewController.m */,
+			);
+			path = AppSencilla;
+			sourceTree = "<group>";
+		};
+		6EAE185F181186B8006D37EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EAE1860181186B8006D37EA /* AppSencilla-Info.plist */,
+				6EAE1861181186B8006D37EA /* InfoPlist.strings */,
+				6EAE1864181186B8006D37EA /* main.m */,
+				6EAE1866181186B8006D37EA /* AppSencilla-Prefix.pch */,
+				6EAE186A181186B8006D37EA /* Default.png */,
+				6EAE186C181186B8006D37EA /* Default@2x.png */,
+				6EAE186E181186B8006D37EA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EAE1854181186B8006D37EA /* AppSencilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAE1878181186B8006D37EA /* Build configuration list for PBXNativeTarget "AppSencilla" */;
+			buildPhases = (
+				6EAE1851181186B8006D37EA /* Sources */,
+				6EAE1852181186B8006D37EA /* Frameworks */,
+				6EAE1853181186B8006D37EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppSencilla;
+			productName = AppSencilla;
+			productReference = 6EAE1855181186B8006D37EA /* AppSencilla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EAE184D181186B8006D37EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pablo Formoso Estada";
+			};
+			buildConfigurationList = 6EAE1850181186B8006D37EA /* Build configuration list for PBXProject "AppSencilla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6EAE184C181186B8006D37EA;
+			productRefGroup = 6EAE1856181186B8006D37EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EAE1854181186B8006D37EA /* AppSencilla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EAE1853181186B8006D37EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAE1863181186B8006D37EA /* InfoPlist.strings in Resources */,
+				6EAE186B181186B8006D37EA /* Default.png in Resources */,
+				6EAE186D181186B8006D37EA /* Default@2x.png in Resources */,
+				6EAE186F181186B8006D37EA /* Default-568h@2x.png in Resources */,
+				6EAE1872181186B8006D37EA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EAE1851181186B8006D37EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAE1865181186B8006D37EA /* main.m in Sources */,
+				6EAE1869181186B8006D37EA /* SWAppDelegate.m in Sources */,
+				6EAE1875181186B8006D37EA /* SWViewController.m in Sources */,
+				6EAE187D1811975E006D37EA /* SWSecondViewController.m in Sources */,
+				6EAE18801811AAA7006D37EA /* SWModalViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6EAE1861181186B8006D37EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAE1862181186B8006D37EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EAE1870181186B8006D37EA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EAE1871181186B8006D37EA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EAE1876181186B8006D37EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6EAE1877181186B8006D37EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EAE1879181186B8006D37EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppSencilla/AppSencilla-Prefix.pch";
+				INFOPLIST_FILE = "AppSencilla/AppSencilla-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6EAE187A181186B8006D37EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppSencilla/AppSencilla-Prefix.pch";
+				INFOPLIST_FILE = "AppSencilla/AppSencilla-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EAE1850181186B8006D37EA /* Build configuration list for PBXProject "AppSencilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAE1876181186B8006D37EA /* Debug */,
+				6EAE1877181186B8006D37EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAE1878181186B8006D37EA /* Build configuration list for PBXNativeTarget "AppSencilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAE1879181186B8006D37EA /* Debug */,
+				6EAE187A181186B8006D37EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EAE184D181186B8006D37EA /* Project object */;
+}

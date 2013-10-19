@@ -1,0 +1,29 @@
+<h1>Listing aecomo_classes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @aecomo_classes.each do |aecomo_class| %>
+  <tr>
+    <td><%= aecomo_class.name %></td>
+    <td><%= aecomo_class.starts_at %></td>
+    <td><%= aecomo_class.ends_at %></td>
+    <td><%= aecomo_class.description %></td>
+    <td><%= link_to 'Show', aecomo_class %></td>
+    <td><%= link_to 'Edit', edit_aecomo_class_path(aecomo_class) %></td>
+    <td><%= link_to 'Destroy', aecomo_class, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Aecomo class', new_aecomo_class_path %>

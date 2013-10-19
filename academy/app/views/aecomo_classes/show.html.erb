@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @aecomo_class.name %>
+</p>
+
+<p>
+  <b>Starts at:</b>
+  <%= @aecomo_class.starts_at %>
+</p>
+
+<p>
+  <b>Ends at:</b>
+  <%= @aecomo_class.ends_at %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @aecomo_class.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_aecomo_class_path(@aecomo_class) %> |
+<%= link_to 'Back', aecomo_classes_path %>
