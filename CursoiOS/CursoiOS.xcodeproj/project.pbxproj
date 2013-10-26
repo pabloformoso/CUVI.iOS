@@ -19,6 +19,7 @@
 		6ECD912A181AC7C00077F71C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD9129181AC7C00077F71C /* Default-568h@2x.png */; };
 		6ECD9131181AC8380077F71C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD9130181AC8380077F71C /* MainStoryboard.storyboard */; };
 		6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */; };
+		6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */; };
 		6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF389AB181BA9CB005C99E2 /* SWClass.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		6ECD9130181AC8380077F71C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6ECD9133181ADEA10077F71C /* SWClassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClassesTableViewController.h; path = Controllers/SWClassesTableViewController.h; sourceTree = "<group>"; };
 		6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClassesTableViewController.m; path = Controllers/SWClassesTableViewController.m; sourceTree = "<group>"; };
+		6EE0DC42181BC3DE00F8F128 /* SWClassDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClassDetailViewController.h; path = Controllers/SWClassDetailViewController.h; sourceTree = "<group>"; };
+		6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClassDetailViewController.m; path = Controllers/SWClassDetailViewController.m; sourceTree = "<group>"; };
 		6EF389AA181BA9CB005C99E2 /* SWClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClass.h; path = Models/SWClass.h; sourceTree = "<group>"; };
 		6EF389AB181BA9CB005C99E2 /* SWClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClass.m; path = Models/SWClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 			children = (
 				6ECD9133181ADEA10077F71C /* SWClassesTableViewController.h */,
 				6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */,
+				6EE0DC42181BC3DE00F8F128 /* SWClassDetailViewController.h */,
+				6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */,
 				6E6EC018181AE5D800A2C286 /* SWCellClass.m in Sources */,
 				6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */,
+				6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

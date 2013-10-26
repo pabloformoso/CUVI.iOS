@@ -101,13 +101,29 @@
 }
 */
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d) %@ - %@", __PRETTY_FUNCTION__, __LINE__, [sender class], segue.identifier);
+#endif
+    
+    int selectedItem = self.tableView.indexPathForSelectedRow.row;
+    SWClass *tmp = [_classes objectAtIndex:selectedItem];
+    
+    if ([segue.destinationViewController respondsToSelector:@selector(setSelectedClass:)]) {
+        
+        [segue.destinationViewController performSelector:@selector(setSelectedClass:) withObject:tmp];
+        
+    }
+}
+
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
     /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+       *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
