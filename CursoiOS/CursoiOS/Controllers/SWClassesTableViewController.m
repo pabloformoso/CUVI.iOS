@@ -5,11 +5,13 @@
 //  Created by Pablo Formoso Estada on 25/10/13.
 //  Copyright (c) 2013 Pablo Formoso Estada. All rights reserved.
 //
-
+#import "SWClass.h"
 #import "SWCellClass.h"
 #import "SWClassesTableViewController.h"
 
 @interface SWClassesTableViewController ()
+
+@property(nonatomic,strong) NSArray *classes;
 
 @end
 
@@ -21,7 +23,9 @@
 #endif
     
     [super viewDidLoad];
-
+    
+    [self loadData];
+    
     self.clearsSelectionOnViewWillAppear = YES;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -35,9 +39,8 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView
-  numberOfRowsInSection:(NSInteger)section {
-    return 20000; // El tamaño del array
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_classes count]; // El tamaño del array
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -50,11 +53,11 @@
     static NSString *CellIdentifier = @"Cell";
     SWCellClass *cell = (SWCellClass *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.className.text = @"Hola";
-    cell.startLabel.text = [NSString stringWithFormat:@"Hora %i", indexPath.section];
-    cell.endLabel.text = [NSString stringWithFormat:@"Fin %i", indexPath.row];
+    SWClass *tmpClass = [_classes objectAtIndex:indexPath.row];
     
-
+    cell.className.text = tmpClass.name;
+    cell.startLabel.text = [NSString stringWithFormat:@"%@", tmpClass.startDate];
+    cell.endLabel.text = [NSString stringWithFormat:@"%@", tmpClass.endDate];
     
     return cell;
 }
@@ -110,5 +113,27 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+- (void)loadData {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    _classes = [NSKeyedUnarchiver unarchiveObjectWithData:[userDefaults objectForKey:@"classes_array"]];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @end

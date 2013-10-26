@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D16E0656-84C9-4E54-876F-4CE9841532AC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CursoiOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5A18C2F5-1003-40B9-B448-DC14FD1A7F47</key>
+		<string>https://github.com/pabloformoso/CUVI.iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CursoiOS/CursoiOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5A18C2F5-1003-40B9-B448-DC14FD1A7F47</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pabloformoso/CUVI.iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5A18C2F5-1003-40B9-B448-DC14FD1A7F47</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A18C2F5-1003-40B9-B448-DC14FD1A7F47</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CursoUDV</string>
+		</dict>
+	</array>
+</dict>
+</plist>

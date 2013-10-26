@@ -19,6 +19,7 @@
 		6ECD912A181AC7C00077F71C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD9129181AC7C00077F71C /* Default-568h@2x.png */; };
 		6ECD9131181AC8380077F71C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD9130181AC8380077F71C /* MainStoryboard.storyboard */; };
 		6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */; };
+		6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF389AB181BA9CB005C99E2 /* SWClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		6ECD9130181AC8380077F71C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6ECD9133181ADEA10077F71C /* SWClassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClassesTableViewController.h; path = Controllers/SWClassesTableViewController.h; sourceTree = "<group>"; };
 		6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClassesTableViewController.m; path = Controllers/SWClassesTableViewController.m; sourceTree = "<group>"; };
+		6EF389AA181BA9CB005C99E2 /* SWClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClass.h; path = Models/SWClass.h; sourceTree = "<group>"; };
+		6EF389AB181BA9CB005C99E2 /* SWClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClass.m; path = Models/SWClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		6ECD9119181AC7C00077F71C /* CursoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6EF389A9181BA988005C99E2 /* Models */,
 				6E6EC015181AE59500A2C286 /* Cells */,
 				6ECD9132181ADE1E0077F71C /* Controllers */,
 				6ECD9122181AC7C00077F71C /* SWAppDelegate.h */,
@@ -126,6 +130,15 @@
 				6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6EF389A9181BA988005C99E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EF389AA181BA9CB005C99E2 /* SWClass.h */,
+				6EF389AB181BA9CB005C99E2 /* SWClass.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +212,7 @@
 				6ECD9124181AC7C00077F71C /* SWAppDelegate.m in Sources */,
 				6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */,
 				6E6EC018181AE5D800A2C286 /* SWCellClass.m in Sources */,
+				6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

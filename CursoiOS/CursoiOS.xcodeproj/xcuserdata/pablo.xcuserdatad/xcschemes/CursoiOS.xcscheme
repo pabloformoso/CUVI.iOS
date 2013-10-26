@@ -62,7 +62,7 @@
    </LaunchAction>
    <ProfileAction
       shouldUseLaunchSchemeArgsEnv = "YES"
-      savedToolIdentifier = ""
+      savedToolIdentifier = "/Applications/XCode4/Xcode4.app/Contents/Applications/Instruments.app/Contents/Resources/templates/Allocations.tracetemplate"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">

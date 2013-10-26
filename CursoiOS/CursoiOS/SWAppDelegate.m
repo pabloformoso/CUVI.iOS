@@ -5,12 +5,36 @@
 //  Created by Pablo Formoso Estada on 25/10/13.
 //  Copyright (c) 2013 Pablo Formoso Estada. All rights reserved.
 //
-
+#import "SWClass.h"
 #import "SWAppDelegate.h"
 
 @implementation SWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSMutableArray *classes = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i <= 20; i++) {
+        SWClass *tmpClass = [[SWClass alloc] init];
+        [tmpClass setClassId:i];
+        [tmpClass setName:[NSString stringWithFormat:@"Clase nº%i", i]];
+        [tmpClass setStartDate:[NSDate date]];
+        [tmpClass setEndDate:[NSDate date]];
+        
+        [classes addObject:tmpClass];
+    }
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:[NSKeyedArchiver archivedDataWithRootObject:classes] forKey:@"classes_array"];
+    
+    [userDefault setBool:YES forKey:@"user_logged_id"];
+    
+    if ([userDefault boolForKey:@"user_logged_id"]) {
+#ifndef NDEBUG
+        NSLog(@"%s (line:%d) Usuario validado!!", __PRETTY_FUNCTION__, __LINE__);
+#endif
+    }
+    
     return YES;
 }
 

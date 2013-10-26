@@ -52,7 +52,7 @@
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="09:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPb-9W-BhB">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="65" id="uM9-np-FXa"/>
+                                                <constraint firstAttribute="width" constant="147" id="dPT-hX-Po8"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -60,7 +60,7 @@
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ok-P9-VRR">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="65" id="eZR-MC-bBU"/>
+                                                <constraint firstAttribute="width" constant="131" id="E1n-2D-dJw"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -70,11 +70,11 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2ok-P9-VRR" secondAttribute="trailing" constant="23" id="I4Z-3a-qbG"/>
                                     <constraint firstItem="XPb-9W-BhB" firstAttribute="leading" secondItem="Nck-Ao-0KM" secondAttribute="leading" type="default" id="NH6-tT-PJd"/>
                                     <constraint firstItem="2ok-P9-VRR" firstAttribute="baseline" secondItem="XPb-9W-BhB" secondAttribute="baseline" type="default" id="Vkq-Tq-oLt"/>
                                     <constraint firstItem="XPb-9W-BhB" firstAttribute="top" secondItem="Nck-Ao-0KM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ZI9-S7-NHI"/>
                                     <constraint firstItem="Nck-Ao-0KM" firstAttribute="top" secondItem="vDd-2W-GF6" secondAttribute="top" constant="8" id="blQ-LN-wrY"/>
+                                    <constraint firstItem="2ok-P9-VRR" firstAttribute="leading" secondItem="XPb-9W-BhB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="dcU-gw-ZIq"/>
                                     <constraint firstAttribute="trailing" secondItem="Nck-Ao-0KM" secondAttribute="trailing" constant="20" type="default" id="ify-Si-D54"/>
                                 </constraints>
                                 <connections>
@@ -347,6 +347,37 @@
             <point key="canvasLocation" x="-196" y="-468"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SWCellClass" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWCellClass.h"/>
+            <relationships>
+                <relationship kind="outlet" name="className" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="endLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SWClassesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClassesTableViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
