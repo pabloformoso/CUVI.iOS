@@ -23,7 +23,6 @@
 #endif
     
     [super viewDidLoad];
-    
     [self loadData];
     
     self.clearsSelectionOnViewWillAppear = YES;

@@ -12,6 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [SQLiteAccess selectAllClasses];    
+    
     NSMutableArray *classes = [[NSMutableArray alloc] init];
     
     for (int i = 0; i <= 20; i++) {
