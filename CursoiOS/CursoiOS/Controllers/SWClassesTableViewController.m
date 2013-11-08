@@ -9,6 +9,7 @@
 #import "SWCellClass.h"
 #import "SWClasesXmlService.h"
 #import "SWClassesTableViewController.h"
+#import "SWClasesJsonService.h"
 
 @interface SWClassesTableViewController ()
 
@@ -155,10 +156,16 @@
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
   
+  MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+  [HUD setLabelText:@"Cargando..."];
+  
   _classes = [[NSArray alloc] init];
   
   SWClasesXmlService *ws = [[SWClasesXmlService alloc] init];
   [ws getClassesForController:self];
+  
+  SWClasesJsonService *ws2 = [[SWClasesJsonService alloc] init];
+  [ws2 getClasesForController:self];
 }
 
 - (void)updateView:(NSArray *)aArray {
@@ -168,12 +175,16 @@
   
   _classes = [[NSArray alloc] initWithArray:aArray];
   [self.tableView reloadData];
+  
+  [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 
 - (void)updateViewFailed {
 #ifndef NDEBUG
   NSLog(@"%s (line:%d) Error", __PRETTY_FUNCTION__, __LINE__);
 #endif
+  
+  [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
 }
 
 

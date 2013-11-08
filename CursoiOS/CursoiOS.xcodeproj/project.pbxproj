@@ -30,6 +30,15 @@
 		6E3319DC182D08E00040FE43 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3319DB182D08E00040FE43 /* CFNetwork.framework */; };
 		6E3319DE182D09150040FE43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3319DD182D09150040FE43 /* SystemConfiguration.framework */; };
 		6E3319E0182D093B0040FE43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3319DF182D093B0040FE43 /* Security.framework */; };
+		6E456113182DA72000C17825 /* SWClasesJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E456112182DA72000C17825 /* SWClasesJsonService.m */; };
+		6E45611D182DAC3800C17825 /* 721-bookmarks.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E456115182DAC3800C17825 /* 721-bookmarks.png */; };
+		6E45611E182DAC3800C17825 /* 721-bookmarks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E456116182DAC3800C17825 /* 721-bookmarks@2x.png */; };
+		6E45611F182DAC3800C17825 /* 779-users.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E456117182DAC3800C17825 /* 779-users.png */; };
+		6E456120182DAC3800C17825 /* 779-users@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E456118182DAC3800C17825 /* 779-users@2x.png */; };
+		6E456121182DAC3800C17825 /* 782-compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E456119182DAC3800C17825 /* 782-compass.png */; };
+		6E456122182DAC3800C17825 /* 782-compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E45611A182DAC3800C17825 /* 782-compass@2x.png */; };
+		6E456123182DAC3800C17825 /* 860-glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E45611B182DAC3800C17825 /* 860-glasses.png */; };
+		6E456124182DAC3800C17825 /* 860-glasses@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E45611C182DAC3800C17825 /* 860-glasses@2x.png */; };
 		6E6EC018181AE5D800A2C286 /* SWCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6EC017181AE5D800A2C286 /* SWCellClass.m */; };
 		6E7D8AE7182D56BC00A1C7F2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D8AE4182D56BC00A1C7F2 /* MBProgressHUD.m */; };
 		6E7D8AE8182D56BC00A1C7F2 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D8AE6182D56BC00A1C7F2 /* BaseXmlParser.m */; };
@@ -93,6 +102,16 @@
 		6E3319DB182D08E00040FE43 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6E3319DD182D09150040FE43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E3319DF182D093B0040FE43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6E456111182DA72000C17825 /* SWClasesJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClasesJsonService.h; path = WebServices/SWClasesJsonService.h; sourceTree = "<group>"; };
+		6E456112182DA72000C17825 /* SWClasesJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClasesJsonService.m; path = WebServices/SWClasesJsonService.m; sourceTree = "<group>"; };
+		6E456115182DAC3800C17825 /* 721-bookmarks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "721-bookmarks.png"; sourceTree = "<group>"; };
+		6E456116182DAC3800C17825 /* 721-bookmarks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "721-bookmarks@2x.png"; sourceTree = "<group>"; };
+		6E456117182DAC3800C17825 /* 779-users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "779-users.png"; sourceTree = "<group>"; };
+		6E456118182DAC3800C17825 /* 779-users@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "779-users@2x.png"; sourceTree = "<group>"; };
+		6E456119182DAC3800C17825 /* 782-compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "782-compass.png"; sourceTree = "<group>"; };
+		6E45611A182DAC3800C17825 /* 782-compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "782-compass@2x.png"; sourceTree = "<group>"; };
+		6E45611B182DAC3800C17825 /* 860-glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "860-glasses.png"; sourceTree = "<group>"; };
+		6E45611C182DAC3800C17825 /* 860-glasses@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "860-glasses@2x.png"; sourceTree = "<group>"; };
 		6E6EC016181AE5D800A2C286 /* SWCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCellClass.h; path = Cells/SWCellClass.h; sourceTree = "<group>"; };
 		6E6EC017181AE5D800A2C286 /* SWCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCellClass.m; path = Cells/SWCellClass.m; sourceTree = "<group>"; };
 		6E7D8AE3182D56BC00A1C7F2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -205,6 +224,21 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		6E456114182DAC1200C17825 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6E456115182DAC3800C17825 /* 721-bookmarks.png */,
+				6E456116182DAC3800C17825 /* 721-bookmarks@2x.png */,
+				6E456117182DAC3800C17825 /* 779-users.png */,
+				6E456118182DAC3800C17825 /* 779-users@2x.png */,
+				6E456119182DAC3800C17825 /* 782-compass.png */,
+				6E45611A182DAC3800C17825 /* 782-compass@2x.png */,
+				6E45611B182DAC3800C17825 /* 860-glasses.png */,
+				6E45611C182DAC3800C17825 /* 860-glasses@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		6E6EC015181AE59500A2C286 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +253,8 @@
 			children = (
 				6E7D8AEA182D5C8D00A1C7F2 /* SWClasesXmlService.h */,
 				6E7D8AEB182D5C8D00A1C7F2 /* SWClasesXmlService.m */,
+				6E456111182DA72000C17825 /* SWClasesJsonService.h */,
+				6E456112182DA72000C17825 /* SWClasesJsonService.m */,
 			);
 			name = WebServices;
 			sourceTree = "<group>";
@@ -274,6 +310,7 @@
 		6ECD911A181AC7C00077F71C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E456114182DAC1200C17825 /* Images */,
 				6E2167A0181BDFEE000C7D57 /* db.sqlite */,
 				6ECD911B181AC7C00077F71C /* CursoiOS-Info.plist */,
 				6ECD911C181AC7C00077F71C /* InfoPlist.strings */,
@@ -358,12 +395,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E456123182DAC3800C17825 /* 860-glasses.png in Resources */,
 				6E2167A9181BE63F000C7D57 /* db.sqlite in Resources */,
+				6E45611E182DAC3800C17825 /* 721-bookmarks@2x.png in Resources */,
 				6ECD911E181AC7C00077F71C /* InfoPlist.strings in Resources */,
+				6E456121182DAC3800C17825 /* 782-compass.png in Resources */,
 				6ECD9126181AC7C00077F71C /* Default.png in Resources */,
 				6ECD9128181AC7C00077F71C /* Default@2x.png in Resources */,
+				6E456120182DAC3800C17825 /* 779-users@2x.png in Resources */,
 				6ECD912A181AC7C00077F71C /* Default-568h@2x.png in Resources */,
 				6ECD9131181AC8380077F71C /* MainStoryboard.storyboard in Resources */,
+				6E456124182DAC3800C17825 /* 860-glasses@2x.png in Resources */,
+				6E45611D182DAC3800C17825 /* 721-bookmarks.png in Resources */,
+				6E45611F182DAC3800C17825 /* 779-users.png in Resources */,
+				6E456122182DAC3800C17825 /* 782-compass@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +439,7 @@
 				6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */,
 				6E7D8AE7182D56BC00A1C7F2 /* MBProgressHUD.m in Sources */,
 				6E3319BF182D08960040FE43 /* AFSecurityPolicy.m in Sources */,
+				6E456113182DA72000C17825 /* SWClasesJsonService.m in Sources */,
 				6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */,
 				6E3319C1182D08960040FE43 /* AFURLRequestSerialization.m in Sources */,
 				6E3319DA182D08A70040FE43 /* UIWebView+AFNetworking.m in Sources */,

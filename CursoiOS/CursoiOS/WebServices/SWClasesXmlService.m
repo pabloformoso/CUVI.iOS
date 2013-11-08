@@ -26,9 +26,9 @@
   
   _controller = aController;
   
-  // http://192.168.1.20:3000/aecomo_classes.xml
+  // http://curso.softwhisper.es/aecomo_classes.xml
   
-  NSString *urlString = @"http://192.168.1.20:3000/aecomo_classes.xml";
+  NSString *urlString = @"http://curso.softwhisper.es/aecomo_classes.xml";
   NSURL *url = [NSURL URLWithString:urlString];
   
   NSURLRequest *request = [NSURLRequest requestWithURL:url

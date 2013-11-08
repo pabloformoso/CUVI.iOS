@@ -11,6 +11,7 @@
 @interface SWClass : NSObject
 
 - (id)initWithDBDictionary:(NSDictionary *)dic;
+- (id)initWithJsonDictionary:(NSDictionary *)dic;
 
 @property (nonatomic, assign) int classId;
 @property (nonatomic, strong) NSString *name;

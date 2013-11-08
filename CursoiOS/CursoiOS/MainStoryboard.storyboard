@@ -15,6 +15,8 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="hOs-KC-Wju" kind="relationship" relationship="viewControllers" id="jeR-SS-rtn"/>
@@ -75,12 +77,12 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="XPb-9W-BhB" firstAttribute="leading" secondItem="Nck-Ao-0KM" secondAttribute="leading" type="default" id="66M-9n-evL"/>
-                                    <constraint firstItem="2ok-P9-VRR" firstAttribute="baseline" secondItem="XPb-9W-BhB" secondAttribute="baseline" type="default" id="Esm-sb-h9l"/>
-                                    <constraint firstItem="Nck-Ao-0KM" firstAttribute="top" secondItem="vDd-2W-GF6" secondAttribute="top" constant="8" type="default" id="L4l-uC-Hfr"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nck-Ao-0KM" secondAttribute="trailing" constant="20" type="default" id="TZV-kc-is9"/>
-                                    <constraint firstItem="XPb-9W-BhB" firstAttribute="top" secondItem="Nck-Ao-0KM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UdU-rd-hsg"/>
-                                    <constraint firstItem="2ok-P9-VRR" firstAttribute="leading" secondItem="XPb-9W-BhB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Ym7-ea-1Bo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nck-Ao-0KM" secondAttribute="trailing" constant="20" type="default" id="7Zj-cR-TKd"/>
+                                    <constraint firstItem="2ok-P9-VRR" firstAttribute="baseline" secondItem="XPb-9W-BhB" secondAttribute="baseline" type="default" id="BzV-W9-6Ls"/>
+                                    <constraint firstItem="Nck-Ao-0KM" firstAttribute="top" secondItem="vDd-2W-GF6" secondAttribute="top" constant="8" type="default" id="fS0-cc-5ir"/>
+                                    <constraint firstItem="2ok-P9-VRR" firstAttribute="leading" secondItem="XPb-9W-BhB" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="niG-Tv-ggp"/>
+                                    <constraint firstItem="XPb-9W-BhB" firstAttribute="top" secondItem="Nck-Ao-0KM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="t8z-ze-D9s"/>
+                                    <constraint firstItem="XPb-9W-BhB" firstAttribute="leading" secondItem="Nck-Ao-0KM" secondAttribute="leading" type="default" id="ws0-l3-evv"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="className" destination="Nck-Ao-0KM" id="xzA-Mz-in2"/>
@@ -197,7 +199,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" id="OxO-vq-Cxd"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="782-compass.png" id="OxO-vq-Cxd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2X-Co-Ppo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,7 +209,7 @@
         <scene sceneID="Ic1-DT-3Q0">
             <objects>
                 <navigationController definesPresentationContext="YES" id="jYz-LU-X0y" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recursos" id="MiC-7F-CBL"/>
+                    <tabBarItem key="tabBarItem" title="Recursos" image="860-glasses.png" id="MiC-7F-CBL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="F6L-xY-h4I">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -335,7 +337,7 @@
         <scene sceneID="e1g-IH-QbM">
             <objects>
                 <navigationController definesPresentationContext="YES" id="8ce-Zo-lJG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Alumnos" id="v1c-QS-PBh"/>
+                    <tabBarItem key="tabBarItem" title="Alumnos" image="779-users.png" id="v1c-QS-PBh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Tks-vh-azW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -351,7 +353,7 @@
         <scene sceneID="Pvf-9C-AhD">
             <objects>
                 <navigationController definesPresentationContext="YES" id="hOs-KC-Wju" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Clases" id="XxL-e7-fHK"/>
+                    <tabBarItem key="tabBarItem" title="Clases" image="721-bookmarks.png" id="XxL-e7-fHK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="k1Y-tj-xN3">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -364,6 +366,12 @@
             <point key="canvasLocation" x="-196" y="-468"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="721-bookmarks.png" width="28" height="24"/>
+        <image name="779-users.png" width="28" height="25"/>
+        <image name="782-compass.png" width="28" height="28"/>
+        <image name="860-glasses.png" width="28" height="11"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

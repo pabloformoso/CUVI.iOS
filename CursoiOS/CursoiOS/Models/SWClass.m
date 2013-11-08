@@ -31,6 +31,24 @@
   return self;
 }
 
+- (id)initWithJsonDictionary:(NSDictionary *)dic {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  self = [super init];
+  
+  if (self) {
+    _classId = [[dic valueForKey:@"id"] integerValue];
+    _name = [dic objectForKey:@"name"];
+    _description = [dic objectForKey:@"description"];
+    _startDate = [NSDate date]; //Transformar la fecha con el string
+    _endDate = [NSDate date];   // de la hora que viene en el dic
+  }
+  
+  return self;
+}
+
 - (id)initWithCoder:(NSCoder *)coder {
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
