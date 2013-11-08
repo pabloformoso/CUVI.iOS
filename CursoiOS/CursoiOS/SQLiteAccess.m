@@ -14,31 +14,24 @@
 @implementation SQLiteAccess
 
 static int singleRowCallback(void *queryValuesVP, int columnCount, char **values, char **columnNames) {
-    
-    NSMutableDictionary *queryValues = [[NSMutableDictionary alloc] initWithDictionary:(__bridge NSMutableDictionary *)queryValuesVP];
-    
+    NSMutableDictionary *queryValues = (__bridge NSMutableDictionary *)queryValuesVP;
     int i;
     for(i=0; i<columnCount; i++) {
-        [queryValues setObject:values[i] ? [NSString stringWithCString:values[i] encoding:NSUTF8StringEncoding] : [NSNull null] 
-                        forKey:[NSString stringWithFormat:@"%s", columnNames[i]]];
+        [queryValues setObject:values[i] ? [NSString stringWithUTF8String:values[i]] : [NSNull null]
+                        forKey:[NSString stringWithUTF8String:columnNames[i]]];
     }
-  
     return 0;
 }
 
 static int multipleRowCallback(void *queryValuesVP, int columnCount, char **values, char **columnNames) {
-
-    NSMutableArray *queryValues = [[NSMutableArray alloc] initWithArray:((__bridge NSArray *)queryValuesVP)];
-    NSMutableDictionary *individualQueryValues = [[NSMutableDictionary alloc] init];
-    
+    NSMutableArray *queryValues = (__bridge NSMutableArray *)queryValuesVP;
+    NSMutableDictionary *individualQueryValues = [NSMutableDictionary dictionary];
     int i;
     for(i=0; i<columnCount; i++) {
-        [individualQueryValues setObject:values[i] ? [NSString stringWithCString:values[i] encoding:NSUTF8StringEncoding] : [NSNull null] 
-                                  forKey:[NSString stringWithFormat:@"%s", columnNames[i]]];
+        [individualQueryValues setObject:values[i] ? [NSString stringWithUTF8String:values[i]] : [NSNull null]
+                                  forKey:[NSString stringWithUTF8String:columnNames[i]]];
     }
-    
-    [queryValues addObject:[[NSDictionary alloc] initWithDictionary:individualQueryValues]];
-  
+    [queryValues addObject:[NSDictionary dictionaryWithDictionary:individualQueryValues]];
     return 0;
 }
 
@@ -91,8 +84,6 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
 }
 
 + (NSNumber *)executeSQL:(NSString *)sql withCallback:(void *)callbackFunction context:(id)contextObject {
-
-    
     NSString *path = [self pathToDB];
     sqlite3 *db = NULL;
     int rc = SQLITE_OK;
@@ -104,11 +95,7 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
         return nil;
     } else {
         char *zErrMsg = NULL;
-        
-        // Con el ARC se introdujo un métod para trabajar a bajo nivel y retener las direcciones de memoría
-        // y que estas las pueda gestionar el ARC. CFBridgingRetain suma el valor de ratain +1 para que no
-        // perdamos el objeto.
-        rc = sqlite3_exec(db, [sql UTF8String], callbackFunction, (void*)CFBridgingRetain(contextObject), &zErrMsg);
+        rc = sqlite3_exec(db, [sql UTF8String], callbackFunction, (__bridge void*)contextObject, &zErrMsg);
         if(SQLITE_OK != rc) {
             NSLog(@"Can't run query '%@' error message: %s\n", sql, sqlite3_errmsg(db));
             sqlite3_free(zErrMsg);
@@ -116,12 +103,10 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
         lastRowId = sqlite3_last_insert_rowid(db);
         sqlite3_close(db);
     }
-    
     NSNumber *lastInsertRowId = nil;
     if(0 != lastRowId) {
         lastInsertRowId = [NSNumber numberWithInteger:lastRowId];
     }
-    
     return lastInsertRowId;
 }
 
