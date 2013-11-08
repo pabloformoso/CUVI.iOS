@@ -5,6 +5,8 @@
 //  Created by Bill Dudney on 3/11/08.
 //  Copyright 2008 Gala Factory. All rights reserved.
 //
+//  Upadted to ARC on 27/10/2013
+
 
 #import "SQLiteAccess.h"
 #import <sqlite3.h>
@@ -12,39 +14,31 @@
 @implementation SQLiteAccess
 
 static int singleRowCallback(void *queryValuesVP, int columnCount, char **values, char **columnNames) {
-    NSMutableDictionary *queryValues = (NSMutableDictionary *)queryValuesVP;
+    NSMutableDictionary *queryValues = (__bridge NSMutableDictionary *)queryValuesVP;
     int i;
     for(i=0; i<columnCount; i++) {
-        [queryValues setObject:values[i] ? [NSString stringWithCString:values[i] encoding:NSUTF8StringEncoding] : [NSNull null] 
-                        forKey:[NSString stringWithFormat:@"%s", columnNames[i]]];
+        [queryValues setObject:values[i] ? [NSString stringWithUTF8String:values[i]] : [NSNull null]
+                        forKey:[NSString stringWithUTF8String:columnNames[i]]];
     }
     return 0;
 }
 
 static int multipleRowCallback(void *queryValuesVP, int columnCount, char **values, char **columnNames) {
-    NSMutableArray *queryValues = (NSMutableArray *)queryValuesVP;
+    NSMutableArray *queryValues = (__bridge NSMutableArray *)queryValuesVP;
     NSMutableDictionary *individualQueryValues = [NSMutableDictionary dictionary];
     int i;
     for(i=0; i<columnCount; i++) {
-        [individualQueryValues setObject:values[i] ? [NSString stringWithCString:values[i] encoding:NSUTF8StringEncoding] : [NSNull null] 
-                                  forKey:[NSString stringWithFormat:@"%s", columnNames[i]]];
+        [individualQueryValues setObject:values[i] ? [NSString stringWithUTF8String:values[i]] : [NSNull null]
+                                  forKey:[NSString stringWithUTF8String:columnNames[i]]];
     }
-    
     [queryValues addObject:[NSDictionary dictionaryWithDictionary:individualQueryValues]];
     return 0;
 }
 
 + (NSString *)pathToDB {
-#ifndef NDEBUG
-    NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
-#endif 
     
-	NSString *dbName = @"db";
+    NSString *dbName = @"db";
     NSString *originalDBPath = [[NSBundle mainBundle] pathForResource:dbName ofType:@"sqlite"];
-    
-#ifndef NDEBUG
-    NSLog(@"[%@] %@ %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), originalDBPath);
-#endif 
     
     NSString *path = nil;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -73,7 +67,8 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
         
     } else if(!dirExists) {
         NSError *error = nil;
-        BOOL success = [fileManager createDirectoryAtPath:dbNameDir attributes:nil];
+        BOOL success = [fileManager createDirectoryAtPath:dbNameDir withIntermediateDirectories:YES attributes:nil error:nil];
+        
         if(!success) {
             NSLog(@"failed to create dir");
         }
@@ -84,7 +79,7 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
             path = dbPath;
         }
     }
-
+  
     return path;
 }
 
@@ -100,15 +95,13 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
         return nil;
     } else {
         char *zErrMsg = NULL;
-        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-        rc = sqlite3_exec(db, [sql UTF8String], callbackFunction, (void*)contextObject, &zErrMsg);
+        rc = sqlite3_exec(db, [sql UTF8String], callbackFunction, (__bridge void*)contextObject, &zErrMsg);
         if(SQLITE_OK != rc) {
             NSLog(@"Can't run query '%@' error message: %s\n", sql, sqlite3_errmsg(db));
             sqlite3_free(zErrMsg);
         }
         lastRowId = sqlite3_last_insert_rowid(db);
         sqlite3_close(db);
-        [pool release];
     }
     NSNumber *lastInsertRowId = nil;
     if(0 != lastRowId) {
@@ -118,6 +111,7 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
 }
 
 + (NSString *)selectOneValueSQL:(NSString *)sql {
+    
     NSMutableDictionary *queryValues = [NSMutableDictionary dictionary];
     [self executeSQL:sql withCallback:singleRowCallback context:queryValues];
     NSString *value = nil;
@@ -137,6 +131,7 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
 }
 
 + (NSArray *)selectManyValuesWithSQL:(NSString *)sql {
+    
     NSMutableArray *queryValues = [NSMutableArray array];
     [self executeSQL:sql withCallback:multipleRowCallback context:queryValues];
     NSMutableArray *values = [NSMutableArray array];
@@ -144,37 +139,46 @@ static int multipleRowCallback(void *queryValuesVP, int columnCount, char **valu
     for(NSDictionary *dict in queryValues) {
         [values addObject:[[dict objectEnumerator] nextObject]];
     }
-	return values;
+    
+    return values;
 }
 
 + (NSDictionary *)selectOneRowWithSQL:(NSString *)sql {
+    
     NSMutableDictionary *queryValues = [NSMutableDictionary dictionary];
     [self executeSQL:sql withCallback:singleRowCallback context:queryValues];
-    return [NSDictionary dictionaryWithDictionary:queryValues];    
+    
+    return [NSDictionary dictionaryWithDictionary:queryValues];
 }
 
 + (NSArray *)selectManyRowsWithSQL:(NSString *)sql {
-    NSMutableArray *queryValues = [NSMutableArray array];
+
+    NSMutableArray *queryValues = [[NSMutableArray alloc] init];
     [self executeSQL:sql withCallback:multipleRowCallback context:queryValues];
-    return [NSArray arrayWithArray:queryValues];
+  
+    return [[NSArray alloc] initWithArray:queryValues];
 }
 
 + (NSNumber *)insertWithSQL:(NSString *)sql {
+    
     sql = [NSString stringWithFormat:@"BEGIN TRANSACTION; %@; COMMIT TRANSACTION;", sql];
     return [self executeSQL:sql withCallback:NULL context:NULL];
 }
 
 + (void)updateWithSQL:(NSString *)sql {
+  
     sql = [NSString stringWithFormat:@"BEGIN TRANSACTION; %@; COMMIT TRANSACTION;", sql];
     [self executeSQL:sql withCallback:NULL context:nil];
 }
 
 + (void)deleteWithSQL:(NSString *)sql {
+    
     sql = [NSString stringWithFormat:@"BEGIN TRANSACTION; %@; COMMIT TRANSACTION;", sql];
     [self executeSQL:sql withCallback:NULL context:nil];
 }
 
 + (void)alterWithSQL:(NSString *)sql {
+    
     sql = [NSString stringWithFormat:@"BEGIN TRANSACTION; %@; COMMIT TRANSACTION;", sql];
     [self executeSQL:sql withCallback:NULL context:nil];    
 }
