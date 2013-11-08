@@ -10,5 +10,7 @@
 
 @interface SWClassesTableViewController : UITableViewController
 
+- (void)updateView:(NSArray *)aArray;
+- (void)updateViewFailed;
 
 @end

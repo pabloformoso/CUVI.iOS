@@ -10,6 +10,27 @@
 
 @implementation SWClass
 
+- (id)initWithDBDictionary:(NSDictionary *)dic {
+  /*
+   descripcion = "Persistencia de .... r Defaults";
+   fin = "22:00";
+   inicio = "17:00";
+   nombre = "iOS Sesion 3";
+   profesor = "Pablo Formoso";
+   */
+  self = [super init];
+  
+  if (self) {
+    _classId = rand();
+    _name = [dic objectForKey:@"nombre"];
+    _description = [dic objectForKey:@"descripcion"];
+    _startDate = [NSDate date]; //Transformar la fecha con el string
+    _endDate = [NSDate date];   // de la hora que viene en el dic
+  }
+  
+  return self;
+}
+
 - (id)initWithCoder:(NSCoder *)coder {
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);

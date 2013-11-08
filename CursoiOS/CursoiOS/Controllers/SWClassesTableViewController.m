@@ -7,6 +7,7 @@
 //
 #import "SWClass.h"
 #import "SWCellClass.h"
+#import "SWClasesXmlService.h"
 #import "SWClassesTableViewController.h"
 
 @interface SWClassesTableViewController ()
@@ -23,8 +24,9 @@
 #endif
     
     [super viewDidLoad];
-    [self loadData];
-    
+    //[self loadData];
+    //[self loadFromDB];
+    [self loadDataFromWS];
     self.clearsSelectionOnViewWillAppear = YES;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -140,13 +142,39 @@
     
 }
 
+- (void)loadFromDB {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  _classes = [SQLiteAccess selectAllClasses];
+}
 
+- (void)loadDataFromWS {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  _classes = [[NSArray alloc] init];
+  
+  SWClasesXmlService *ws = [[SWClasesXmlService alloc] init];
+  [ws getClassesForController:self];
+}
 
+- (void)updateView:(NSArray *)aArray {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  
+  _classes = [[NSArray alloc] initWithArray:aArray];
+  [self.tableView reloadData];
+}
 
-
-
-
-
+- (void)updateViewFailed {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d) Error", __PRETTY_FUNCTION__, __LINE__);
+#endif
+}
 
 
 

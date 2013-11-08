@@ -42,7 +42,8 @@
 #endif
     
     [_classNameLabel setText:_selectedClass.name];
-    
+    [_descTextView setText:_selectedClass.description];
+  
     NSDateFormatter *formater = [[NSDateFormatter alloc] init];
     [formater setDateFormat:@"dd-MM-yyyy"];
     [formater setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"es"]];

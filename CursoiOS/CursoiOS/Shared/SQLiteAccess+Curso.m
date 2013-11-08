@@ -5,7 +5,7 @@
 //  Created by Pablo Formoso Estada on 26/10/13.
 //  Copyright (c) 2013 Pablo Formoso Estada. All rights reserved.
 //
-
+#import "SWClass.h"
 #import "SQLiteAccess+Curso.h"
 
 @implementation SQLiteAccess (Curso)
@@ -18,12 +18,14 @@
     NSString *query = @"SELECT * FROM clases;";
     
     NSArray *temp = [[NSArray alloc] initWithArray:[self selectManyRowsWithSQL:query] copyItems:YES];
-    //[self selectManyRowsWithSQL:query];
+
     NSMutableArray *clases = [[NSMutableArray alloc] init];
     
     for (NSDictionary *cls in temp) {
         if (cls) {
-            NSLog(@"%@", [cls description]);
+          NSLog(@"%@", [cls description]);
+          SWClass *tmp = [[SWClass alloc] initWithDBDictionary:cls];
+          [clases addObject:tmp];
         }
     }
 
