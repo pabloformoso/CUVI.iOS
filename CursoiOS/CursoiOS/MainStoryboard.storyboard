@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="aCJ-bh-gml">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aCJ-bh-gml">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -15,8 +15,6 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="hOs-KC-Wju" kind="relationship" relationship="viewControllers" id="jeR-SS-rtn"/>
@@ -46,7 +44,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sesión de clase 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nck-Ao-0KM">
-                                            <rect key="frame" x="11" y="8" width="289" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="289" scoringType="23.5" id="OM7-f3-LoJ"/>
                                                 <constraint firstAttribute="height" constant="21" scoringType="23.5" id="ws1-u5-goB"/>
@@ -56,7 +53,6 @@
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="09:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPb-9W-BhB">
-                                            <rect key="frame" x="11" y="37" width="147" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="147" scoringType="23.5" id="dPT-hX-Po8"/>
                                             </constraints>
@@ -65,7 +61,6 @@
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ok-P9-VRR">
-                                            <rect key="frame" x="166" y="37" width="131" height="23"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="131" scoringType="23.5" id="E1n-2D-dJw"/>
                                             </constraints>
@@ -109,7 +104,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sesión de clase 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FG-C0-e3K">
-                                <rect key="frame" x="16" y="20" width="284" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="284" scoringType="23.5" id="HOZ-M4-iik"/>
                                     <constraint firstAttribute="height" constant="40" scoringType="23.5" id="Y3t-jX-9nv"/>
@@ -119,7 +113,6 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="09:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLu-8d-wBY">
-                                <rect key="frame" x="140" y="68" width="160" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" scoringType="23.5" id="vbl-PW-ENc"/>
                                 </constraints>
@@ -128,7 +121,6 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Inicio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQi-WB-owH">
-                                <rect key="frame" x="20" y="68" width="125" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="125" scoringType="23.5" id="8oo-97-HBB"/>
                                 </constraints>
@@ -137,19 +129,16 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fin:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-UR-POT">
-                                <rect key="frame" x="20" y="94" width="125" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="14:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSP-ar-BBH">
-                                <rect key="frame" x="140" y="94" width="160" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZY-De-ZI8">
-                                <rect key="frame" x="9" y="150" width="296" height="285"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" scoringType="23.5" id="3ab-kf-zdg"/>
@@ -210,7 +199,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="jYz-LU-X0y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Recursos" image="860-glasses.png" id="MiC-7F-CBL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="F6L-xY-h4I">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="F6L-xY-h4I">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -338,7 +327,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="8ce-Zo-lJG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Alumnos" image="779-users.png" id="v1c-QS-PBh"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Tks-vh-azW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="Tks-vh-azW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -354,7 +343,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="hOs-KC-Wju" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Clases" image="721-bookmarks.png" id="XxL-e7-fHK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="k1Y-tj-xN3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="k1Y-tj-xN3">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -372,6 +361,46 @@
         <image name="782-compass.png" width="28" height="28"/>
         <image name="860-glasses.png" width="28" height="11"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SWCellClass" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWCellClass.h"/>
+            <relationships>
+                <relationship kind="outlet" name="className" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="endLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SWClassDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClassDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="classNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="descTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="endLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SWClassesTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SWClassesTableViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
