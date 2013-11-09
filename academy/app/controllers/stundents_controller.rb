@@ -6,7 +6,7 @@ class StundentsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @stundents }
+      format.json { render json: @stundents, methods: :image_url }
       format.xml { render xml: @stundents, methods: :image_url }
     end
   end

@@ -55,6 +55,11 @@
 		6ECD9131181AC8380077F71C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ECD9130181AC8380077F71C /* MainStoryboard.storyboard */; };
 		6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */; };
 		6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */; };
+		6EEE6247182E345D003E3526 /* SWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE6246182E345D003E3526 /* SWStudent.m */; };
+		6EEE624A182E371F003E3526 /* SWStudentsJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE6249182E371F003E3526 /* SWStudentsJsonService.m */; };
+		6EEE624E182E4ADD003E3526 /* SWCellStundet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE624D182E4ADD003E3526 /* SWCellStundet.m */; };
+		6EEE6251182E4E14003E3526 /* SWStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE6250182E4E14003E3526 /* SWStudentsTableViewController.m */; };
+		6EEE6253182E55BB003E3526 /* placeholder.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE6252182E55BB003E3526 /* placeholder.JPG */; };
 		6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF389AB181BA9CB005C99E2 /* SWClass.m */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +143,15 @@
 		6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClassesTableViewController.m; path = Controllers/SWClassesTableViewController.m; sourceTree = "<group>"; };
 		6EE0DC42181BC3DE00F8F128 /* SWClassDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClassDetailViewController.h; path = Controllers/SWClassDetailViewController.h; sourceTree = "<group>"; };
 		6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClassDetailViewController.m; path = Controllers/SWClassDetailViewController.m; sourceTree = "<group>"; };
+		6EEE6245182E345D003E3526 /* SWStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWStudent.h; path = Models/SWStudent.h; sourceTree = "<group>"; };
+		6EEE6246182E345D003E3526 /* SWStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWStudent.m; path = Models/SWStudent.m; sourceTree = "<group>"; };
+		6EEE6248182E371F003E3526 /* SWStudentsJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWStudentsJsonService.h; path = WebServices/SWStudentsJsonService.h; sourceTree = "<group>"; };
+		6EEE6249182E371F003E3526 /* SWStudentsJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWStudentsJsonService.m; path = WebServices/SWStudentsJsonService.m; sourceTree = "<group>"; };
+		6EEE624C182E4ADD003E3526 /* SWCellStundet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWCellStundet.h; path = Cells/SWCellStundet.h; sourceTree = "<group>"; };
+		6EEE624D182E4ADD003E3526 /* SWCellStundet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWCellStundet.m; path = Cells/SWCellStundet.m; sourceTree = "<group>"; };
+		6EEE624F182E4E14003E3526 /* SWStudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWStudentsTableViewController.h; path = Controllers/SWStudentsTableViewController.h; sourceTree = "<group>"; };
+		6EEE6250182E4E14003E3526 /* SWStudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWStudentsTableViewController.m; path = Controllers/SWStudentsTableViewController.m; sourceTree = "<group>"; };
+		6EEE6252182E55BB003E3526 /* placeholder.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.JPG; sourceTree = "<group>"; };
 		6EF389AA181BA9CB005C99E2 /* SWClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClass.h; path = Models/SWClass.h; sourceTree = "<group>"; };
 		6EF389AB181BA9CB005C99E2 /* SWClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClass.m; path = Models/SWClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +241,7 @@
 		6E456114182DAC1200C17825 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6EEE6252182E55BB003E3526 /* placeholder.JPG */,
 				6E456115182DAC3800C17825 /* 721-bookmarks.png */,
 				6E456116182DAC3800C17825 /* 721-bookmarks@2x.png */,
 				6E456117182DAC3800C17825 /* 779-users.png */,
@@ -244,6 +259,8 @@
 			children = (
 				6E6EC016181AE5D800A2C286 /* SWCellClass.h */,
 				6E6EC017181AE5D800A2C286 /* SWCellClass.m */,
+				6EEE624C182E4ADD003E3526 /* SWCellStundet.h */,
+				6EEE624D182E4ADD003E3526 /* SWCellStundet.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -255,6 +272,8 @@
 				6E7D8AEB182D5C8D00A1C7F2 /* SWClasesXmlService.m */,
 				6E456111182DA72000C17825 /* SWClasesJsonService.h */,
 				6E456112182DA72000C17825 /* SWClasesJsonService.m */,
+				6EEE6248182E371F003E3526 /* SWStudentsJsonService.h */,
+				6EEE6249182E371F003E3526 /* SWStudentsJsonService.m */,
 			);
 			name = WebServices;
 			sourceTree = "<group>";
@@ -330,6 +349,8 @@
 				6ECD9134181ADEA10077F71C /* SWClassesTableViewController.m */,
 				6EE0DC42181BC3DE00F8F128 /* SWClassDetailViewController.h */,
 				6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */,
+				6EEE624F182E4E14003E3526 /* SWStudentsTableViewController.h */,
+				6EEE6250182E4E14003E3526 /* SWStudentsTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,6 +360,8 @@
 			children = (
 				6EF389AA181BA9CB005C99E2 /* SWClass.h */,
 				6EF389AB181BA9CB005C99E2 /* SWClass.m */,
+				6EEE6245182E345D003E3526 /* SWStudent.h */,
+				6EEE6246182E345D003E3526 /* SWStudent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -402,6 +425,7 @@
 				6E456121182DAC3800C17825 /* 782-compass.png in Resources */,
 				6ECD9126181AC7C00077F71C /* Default.png in Resources */,
 				6ECD9128181AC7C00077F71C /* Default@2x.png in Resources */,
+				6EEE6253182E55BB003E3526 /* placeholder.JPG in Resources */,
 				6E456120182DAC3800C17825 /* 779-users@2x.png in Resources */,
 				6ECD912A181AC7C00077F71C /* Default-568h@2x.png in Resources */,
 				6ECD9131181AC8380077F71C /* MainStoryboard.storyboard in Resources */,
@@ -424,6 +448,7 @@
 				6E3319D7182D08A70040FE43 /* UIButton+AFNetworking.m in Sources */,
 				6E3319D9182D08A70040FE43 /* UIProgressView+AFNetworking.m in Sources */,
 				6E3319BB182D08960040FE43 /* AFHTTPRequestOperation.m in Sources */,
+				6EEE6251182E4E14003E3526 /* SWStudentsTableViewController.m in Sources */,
 				6ECD9120181AC7C00077F71C /* main.m in Sources */,
 				6E3319D6182D08A70040FE43 /* UIAlertView+AFNetworking.m in Sources */,
 				6E7D8AEC182D5C8D00A1C7F2 /* SWClasesXmlService.m in Sources */,
@@ -439,6 +464,8 @@
 				6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */,
 				6E7D8AE7182D56BC00A1C7F2 /* MBProgressHUD.m in Sources */,
 				6E3319BF182D08960040FE43 /* AFSecurityPolicy.m in Sources */,
+				6EEE6247182E345D003E3526 /* SWStudent.m in Sources */,
+				6EEE624A182E371F003E3526 /* SWStudentsJsonService.m in Sources */,
 				6E456113182DA72000C17825 /* SWClasesJsonService.m in Sources */,
 				6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */,
 				6E3319C1182D08960040FE43 /* AFURLRequestSerialization.m in Sources */,
@@ -447,6 +474,7 @@
 				6E3319C2182D08960040FE43 /* AFURLResponseSerialization.m in Sources */,
 				6E2167A3181BE014000C7D57 /* SQLiteAccess.m in Sources */,
 				6E7D8AE8182D56BC00A1C7F2 /* BaseXmlParser.m in Sources */,
+				6EEE624E182E4ADD003E3526 /* SWCellStundet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
