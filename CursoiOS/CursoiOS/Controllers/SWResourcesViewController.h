@@ -10,4 +10,6 @@
 
 @interface SWResourcesViewController : UICollectionViewController
 
+- (void)updateView:(NSArray *)anArray;
+
 @end

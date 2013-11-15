@@ -10,4 +10,7 @@
 
 @interface SWWebCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descLabel;
+
 @end
