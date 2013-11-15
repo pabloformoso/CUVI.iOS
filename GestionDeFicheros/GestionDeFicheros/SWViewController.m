@@ -95,7 +95,7 @@ otherButtonTitles:@"Cámara", @"Librería", nil];
         
         NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
         
-        NSString *path = [NSString stringWithFormat:@"%@%.f%@",
+        NSString *path = [NSString stringWithFormat:@"%@/%.f%@",
                           [[[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSAllDomainsMask] objectAtIndex:0] path], timestamp, @".jpg"];
         
         BOOL status = [fileManager createFileAtPath:path

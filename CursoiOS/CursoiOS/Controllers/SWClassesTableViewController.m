@@ -140,7 +140,7 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
     _classes = [NSKeyedUnarchiver unarchiveObjectWithData:[userDefaults objectForKey:@"classes_array"]];
-    
+
 }
 
 - (void)loadFromDB {

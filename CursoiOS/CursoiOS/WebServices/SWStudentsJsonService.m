@@ -54,8 +54,8 @@
 #endif
   }];
   
-  [operation start];
-  
+  //[operation start];
+  [[NSOperationQueue mainQueue] addOperation:operation];
   
 }
 

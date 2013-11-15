@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SWStudentsTableViewController : UITableViewController
+@interface SWStudentsTableViewController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate>
+
+@property (weak, nonatomic) IBOutlet UISearchBar *filterSearchBar;
 
 @end

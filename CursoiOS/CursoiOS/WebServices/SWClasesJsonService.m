@@ -53,7 +53,16 @@
 #endif
   }];
   
-  [operation start];
+  //[operation start];
+  
+  [[NSOperationQueue mainQueue] addOperation:operation];
+
+  /* Creación de colas de tareas personalizadas
+  NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+  [queue setName:@"network"];
+  [queue setMaxConcurrentOperationCount:2];
+  [queue addOperation:operation];
+   */
 }
 
 // Parseamos el JSON que nos llega

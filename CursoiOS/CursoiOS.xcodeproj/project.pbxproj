@@ -43,6 +43,14 @@
 		6E7D8AE7182D56BC00A1C7F2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D8AE4182D56BC00A1C7F2 /* MBProgressHUD.m */; };
 		6E7D8AE8182D56BC00A1C7F2 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D8AE6182D56BC00A1C7F2 /* BaseXmlParser.m */; };
 		6E7D8AEC182D5C8D00A1C7F2 /* SWClasesXmlService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D8AEB182D5C8D00A1C7F2 /* SWClasesXmlService.m */; };
+		6E9CC3E918365822002DCFDF /* SWResourcesJsonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3E818365822002DCFDF /* SWResourcesJsonService.m */; };
+		6E9CC3EC1836583C002DCFDF /* SWPostResourceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3EB1836583C002DCFDF /* SWPostResourceService.m */; };
+		6E9CC3EF183660C8002DCFDF /* SWResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3EE183660C8002DCFDF /* SWResource.m */; };
+		6E9CC3F218366156002DCFDF /* SWResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3F118366156002DCFDF /* SWResourcesViewController.m */; };
+		6E9CC3F518366209002DCFDF /* SWWebCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3F418366209002DCFDF /* SWWebCell.m */; };
+		6E9CC3F81836625A002DCFDF /* SWAddResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3F71836625A002DCFDF /* SWAddResourceViewController.m */; };
+		6E9CC3FB18366287002DCFDF /* SWWebDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3FA18366287002DCFDF /* SWWebDetailViewController.m */; };
+		6E9CC3FE183662B4002DCFDF /* SWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CC3FD183662B4002DCFDF /* SWMapViewController.m */; };
 		6ECD9114181AC7C00077F71C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD9113181AC7C00077F71C /* UIKit.framework */; };
 		6ECD9116181AC7C00077F71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD9115181AC7C00077F71C /* Foundation.framework */; };
 		6ECD9118181AC7C00077F71C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ECD9117181AC7C00077F71C /* CoreGraphics.framework */; };
@@ -125,6 +133,22 @@
 		6E7D8AE6182D56BC00A1C7F2 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
 		6E7D8AEA182D5C8D00A1C7F2 /* SWClasesXmlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClasesXmlService.h; path = WebServices/SWClasesXmlService.h; sourceTree = "<group>"; };
 		6E7D8AEB182D5C8D00A1C7F2 /* SWClasesXmlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClasesXmlService.m; path = WebServices/SWClasesXmlService.m; sourceTree = "<group>"; };
+		6E9CC3E718365822002DCFDF /* SWResourcesJsonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWResourcesJsonService.h; path = WebServices/SWResourcesJsonService.h; sourceTree = "<group>"; };
+		6E9CC3E818365822002DCFDF /* SWResourcesJsonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWResourcesJsonService.m; path = WebServices/SWResourcesJsonService.m; sourceTree = "<group>"; };
+		6E9CC3EA1836583C002DCFDF /* SWPostResourceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWPostResourceService.h; path = WebServices/SWPostResourceService.h; sourceTree = "<group>"; };
+		6E9CC3EB1836583C002DCFDF /* SWPostResourceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWPostResourceService.m; path = WebServices/SWPostResourceService.m; sourceTree = "<group>"; };
+		6E9CC3ED183660C8002DCFDF /* SWResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWResource.h; path = Models/SWResource.h; sourceTree = "<group>"; };
+		6E9CC3EE183660C8002DCFDF /* SWResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWResource.m; path = Models/SWResource.m; sourceTree = "<group>"; };
+		6E9CC3F018366156002DCFDF /* SWResourcesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWResourcesViewController.h; path = Controllers/SWResourcesViewController.h; sourceTree = "<group>"; };
+		6E9CC3F118366156002DCFDF /* SWResourcesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWResourcesViewController.m; path = Controllers/SWResourcesViewController.m; sourceTree = "<group>"; };
+		6E9CC3F318366209002DCFDF /* SWWebCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWWebCell.h; path = Models/SWWebCell.h; sourceTree = "<group>"; };
+		6E9CC3F418366209002DCFDF /* SWWebCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWWebCell.m; path = Models/SWWebCell.m; sourceTree = "<group>"; };
+		6E9CC3F61836625A002DCFDF /* SWAddResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWAddResourceViewController.h; path = Controllers/SWAddResourceViewController.h; sourceTree = "<group>"; };
+		6E9CC3F71836625A002DCFDF /* SWAddResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWAddResourceViewController.m; path = Controllers/SWAddResourceViewController.m; sourceTree = "<group>"; };
+		6E9CC3F918366287002DCFDF /* SWWebDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWWebDetailViewController.h; path = Controllers/SWWebDetailViewController.h; sourceTree = "<group>"; };
+		6E9CC3FA18366287002DCFDF /* SWWebDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWWebDetailViewController.m; path = Controllers/SWWebDetailViewController.m; sourceTree = "<group>"; };
+		6E9CC3FC183662B4002DCFDF /* SWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWMapViewController.h; path = Controllers/SWMapViewController.h; sourceTree = "<group>"; };
+		6E9CC3FD183662B4002DCFDF /* SWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWMapViewController.m; path = Controllers/SWMapViewController.m; sourceTree = "<group>"; };
 		6ECD9110181AC7C00077F71C /* CursoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECD9113181AC7C00077F71C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ECD9115181AC7C00077F71C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -261,6 +285,8 @@
 				6E6EC017181AE5D800A2C286 /* SWCellClass.m */,
 				6EEE624C182E4ADD003E3526 /* SWCellStundet.h */,
 				6EEE624D182E4ADD003E3526 /* SWCellStundet.m */,
+				6E9CC3F318366209002DCFDF /* SWWebCell.h */,
+				6E9CC3F418366209002DCFDF /* SWWebCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -274,6 +300,10 @@
 				6E456112182DA72000C17825 /* SWClasesJsonService.m */,
 				6EEE6248182E371F003E3526 /* SWStudentsJsonService.h */,
 				6EEE6249182E371F003E3526 /* SWStudentsJsonService.m */,
+				6E9CC3E718365822002DCFDF /* SWResourcesJsonService.h */,
+				6E9CC3E818365822002DCFDF /* SWResourcesJsonService.m */,
+				6E9CC3EA1836583C002DCFDF /* SWPostResourceService.h */,
+				6E9CC3EB1836583C002DCFDF /* SWPostResourceService.m */,
 			);
 			name = WebServices;
 			sourceTree = "<group>";
@@ -351,6 +381,14 @@
 				6EE0DC43181BC3DE00F8F128 /* SWClassDetailViewController.m */,
 				6EEE624F182E4E14003E3526 /* SWStudentsTableViewController.h */,
 				6EEE6250182E4E14003E3526 /* SWStudentsTableViewController.m */,
+				6E9CC3F018366156002DCFDF /* SWResourcesViewController.h */,
+				6E9CC3F118366156002DCFDF /* SWResourcesViewController.m */,
+				6E9CC3F61836625A002DCFDF /* SWAddResourceViewController.h */,
+				6E9CC3F71836625A002DCFDF /* SWAddResourceViewController.m */,
+				6E9CC3F918366287002DCFDF /* SWWebDetailViewController.h */,
+				6E9CC3FA18366287002DCFDF /* SWWebDetailViewController.m */,
+				6E9CC3FC183662B4002DCFDF /* SWMapViewController.h */,
+				6E9CC3FD183662B4002DCFDF /* SWMapViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -362,6 +400,8 @@
 				6EF389AB181BA9CB005C99E2 /* SWClass.m */,
 				6EEE6245182E345D003E3526 /* SWStudent.h */,
 				6EEE6246182E345D003E3526 /* SWStudent.m */,
+				6E9CC3ED183660C8002DCFDF /* SWResource.h */,
+				6E9CC3EE183660C8002DCFDF /* SWResource.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -446,18 +486,24 @@
 				6E3319C3182D08960040FE43 /* AFURLSessionManager.m in Sources */,
 				6E3319C0182D08960040FE43 /* AFURLConnectionOperation.m in Sources */,
 				6E3319D7182D08A70040FE43 /* UIButton+AFNetworking.m in Sources */,
+				6E9CC3EC1836583C002DCFDF /* SWPostResourceService.m in Sources */,
+				6E9CC3F81836625A002DCFDF /* SWAddResourceViewController.m in Sources */,
 				6E3319D9182D08A70040FE43 /* UIProgressView+AFNetworking.m in Sources */,
 				6E3319BB182D08960040FE43 /* AFHTTPRequestOperation.m in Sources */,
 				6EEE6251182E4E14003E3526 /* SWStudentsTableViewController.m in Sources */,
 				6ECD9120181AC7C00077F71C /* main.m in Sources */,
 				6E3319D6182D08A70040FE43 /* UIAlertView+AFNetworking.m in Sources */,
 				6E7D8AEC182D5C8D00A1C7F2 /* SWClasesXmlService.m in Sources */,
+				6E9CC3F218366156002DCFDF /* SWResourcesViewController.m in Sources */,
+				6E9CC3E918365822002DCFDF /* SWResourcesJsonService.m in Sources */,
 				6E3319BC182D08960040FE43 /* AFHTTPRequestOperationManager.m in Sources */,
 				6ECD9124181AC7C00077F71C /* SWAppDelegate.m in Sources */,
+				6E9CC3FE183662B4002DCFDF /* SWMapViewController.m in Sources */,
 				6E2167A8181BE390000C7D57 /* SQLiteAccess+Curso.m in Sources */,
 				6E3319D8182D08A70040FE43 /* UIImageView+AFNetworking.m in Sources */,
 				6E3319BD182D08960040FE43 /* AFHTTPSessionManager.m in Sources */,
 				6E3319D5182D08A70040FE43 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				6E9CC3F518366209002DCFDF /* SWWebCell.m in Sources */,
 				6E3319D4182D08A70040FE43 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */,
 				6E6EC018181AE5D800A2C286 /* SWCellClass.m in Sources */,
@@ -465,10 +511,12 @@
 				6E7D8AE7182D56BC00A1C7F2 /* MBProgressHUD.m in Sources */,
 				6E3319BF182D08960040FE43 /* AFSecurityPolicy.m in Sources */,
 				6EEE6247182E345D003E3526 /* SWStudent.m in Sources */,
+				6E9CC3FB18366287002DCFDF /* SWWebDetailViewController.m in Sources */,
 				6EEE624A182E371F003E3526 /* SWStudentsJsonService.m in Sources */,
 				6E456113182DA72000C17825 /* SWClasesJsonService.m in Sources */,
 				6EE0DC44181BC3DE00F8F128 /* SWClassDetailViewController.m in Sources */,
 				6E3319C1182D08960040FE43 /* AFURLRequestSerialization.m in Sources */,
+				6E9CC3EF183660C8002DCFDF /* SWResource.m in Sources */,
 				6E3319DA182D08A70040FE43 /* UIWebView+AFNetworking.m in Sources */,
 				6E3319BE182D08960040FE43 /* AFNetworkReachabilityManager.m in Sources */,
 				6E3319C2182D08960040FE43 /* AFURLResponseSerialization.m in Sources */,

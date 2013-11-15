@@ -28,7 +28,7 @@
     
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     [userDefault setObject:[NSKeyedArchiver archivedDataWithRootObject:classes] forKey:@"classes_array"];
-    
+  
     [userDefault setBool:YES forKey:@"user_logged_id"];
     
     if ([userDefault boolForKey:@"user_logged_id"]) {

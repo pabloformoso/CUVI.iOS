@@ -49,7 +49,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  if (tableView == self.tableView) {
     static NSString *CellIdentifier = @"StudentCell";
+  
     SWCellStundet *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
     SWStudent *tmp = [_stundets objectAtIndex:indexPath.row];
@@ -58,8 +60,15 @@
     [cell.cityLabel setText:tmp.city];
     [cell.avatarImageView setImageWithURL:[tmp getAvatarURL]
                          placeholderImage:[UIImage imageNamed:@"placeholder.JPG"]];
-  
+    
     return cell;
+    
+  } else {
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    return cell;
+  }
 }
 
 /*
