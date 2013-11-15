@@ -69,6 +69,13 @@
 		6EEE6251182E4E14003E3526 /* SWStudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE6250182E4E14003E3526 /* SWStudentsTableViewController.m */; };
 		6EEE6253182E55BB003E3526 /* placeholder.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6EEE6252182E55BB003E3526 /* placeholder.JPG */; };
 		6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF389AB181BA9CB005C99E2 /* SWClass.m */; };
+		6EF418281836CBE5001D5B25 /* SWMapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF418271836CBE5001D5B25 /* SWMapPin.m */; };
+		6EF4182B1836CF48001D5B25 /* SWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4182A1836CF48001D5B25 /* SWLocationManager.m */; };
+		6EF4182E1836D049001D5B25 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4182D1836D049001D5B25 /* AudioStreamer.m */; };
+		6EF418301836D072001D5B25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF4182F1836D072001D5B25 /* MapKit.framework */; };
+		6EF418321836D07A001D5B25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF418311836D07A001D5B25 /* CoreLocation.framework */; };
+		6EF418341836D083001D5B25 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF418331836D083001D5B25 /* AVFoundation.framework */; };
+		6EF418361836D1EE001D5B25 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF418351836D1EE001D5B25 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +185,16 @@
 		6EEE6252182E55BB003E3526 /* placeholder.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.JPG; sourceTree = "<group>"; };
 		6EF389AA181BA9CB005C99E2 /* SWClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWClass.h; path = Models/SWClass.h; sourceTree = "<group>"; };
 		6EF389AB181BA9CB005C99E2 /* SWClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWClass.m; path = Models/SWClass.m; sourceTree = "<group>"; };
+		6EF418261836CBE5001D5B25 /* SWMapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMapPin.h; sourceTree = "<group>"; };
+		6EF418271836CBE5001D5B25 /* SWMapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMapPin.m; sourceTree = "<group>"; };
+		6EF418291836CF48001D5B25 /* SWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLocationManager.h; sourceTree = "<group>"; };
+		6EF4182A1836CF48001D5B25 /* SWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLocationManager.m; sourceTree = "<group>"; };
+		6EF4182C1836D049001D5B25 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		6EF4182D1836D049001D5B25 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		6EF4182F1836D072001D5B25 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6EF418311836D07A001D5B25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6EF418331836D083001D5B25 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6EF418351836D1EE001D5B25 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +202,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF418361836D1EE001D5B25 /* AudioToolbox.framework in Frameworks */,
+				6EF418341836D083001D5B25 /* AVFoundation.framework in Frameworks */,
+				6EF418321836D07A001D5B25 /* CoreLocation.framework in Frameworks */,
+				6EF418301836D072001D5B25 /* MapKit.framework in Frameworks */,
 				6E3319E0182D093B0040FE43 /* Security.framework in Frameworks */,
 				6E3319DE182D09150040FE43 /* SystemConfiguration.framework in Frameworks */,
 				6E3319DC182D08E00040FE43 /* CFNetwork.framework in Frameworks */,
@@ -201,6 +222,10 @@
 		6E21679F181BDF8B000C7D57 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6EF4182C1836D049001D5B25 /* AudioStreamer.h */,
+				6EF4182D1836D049001D5B25 /* AudioStreamer.m */,
+				6EF418291836CF48001D5B25 /* SWLocationManager.h */,
+				6EF4182A1836CF48001D5B25 /* SWLocationManager.m */,
 				6E7D8AE3182D56BC00A1C7F2 /* MBProgressHUD.h */,
 				6E7D8AE4182D56BC00A1C7F2 /* MBProgressHUD.m */,
 				6E7D8AE5182D56BC00A1C7F2 /* BaseXmlParser.h */,
@@ -328,6 +353,10 @@
 		6ECD9112181AC7C00077F71C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6EF418351836D1EE001D5B25 /* AudioToolbox.framework */,
+				6EF418331836D083001D5B25 /* AVFoundation.framework */,
+				6EF418311836D07A001D5B25 /* CoreLocation.framework */,
+				6EF4182F1836D072001D5B25 /* MapKit.framework */,
 				6E3319DF182D093B0040FE43 /* Security.framework */,
 				6E3319DD182D09150040FE43 /* SystemConfiguration.framework */,
 				6E3319DB182D08E00040FE43 /* CFNetwork.framework */,
@@ -396,6 +425,8 @@
 		6EF389A9181BA988005C99E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6EF418261836CBE5001D5B25 /* SWMapPin.h */,
+				6EF418271836CBE5001D5B25 /* SWMapPin.m */,
 				6EF389AA181BA9CB005C99E2 /* SWClass.h */,
 				6EF389AB181BA9CB005C99E2 /* SWClass.m */,
 				6EEE6245182E345D003E3526 /* SWStudent.h */,
@@ -505,6 +536,7 @@
 				6E3319D5182D08A70040FE43 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				6E9CC3F518366209002DCFDF /* SWWebCell.m in Sources */,
 				6E3319D4182D08A70040FE43 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				6EF4182E1836D049001D5B25 /* AudioStreamer.m in Sources */,
 				6ECD9135181ADEA10077F71C /* SWClassesTableViewController.m in Sources */,
 				6E6EC018181AE5D800A2C286 /* SWCellClass.m in Sources */,
 				6EF389AC181BA9CB005C99E2 /* SWClass.m in Sources */,
@@ -519,7 +551,9 @@
 				6E9CC3EF183660C8002DCFDF /* SWResource.m in Sources */,
 				6E3319DA182D08A70040FE43 /* UIWebView+AFNetworking.m in Sources */,
 				6E3319BE182D08960040FE43 /* AFNetworkReachabilityManager.m in Sources */,
+				6EF4182B1836CF48001D5B25 /* SWLocationManager.m in Sources */,
 				6E3319C2182D08960040FE43 /* AFURLResponseSerialization.m in Sources */,
+				6EF418281836CBE5001D5B25 /* SWMapPin.m in Sources */,
 				6E2167A3181BE014000C7D57 /* SQLiteAccess.m in Sources */,
 				6E7D8AE8182D56BC00A1C7F2 /* BaseXmlParser.m in Sources */,
 				6EEE624E182E4ADD003E3526 /* SWCellStundet.m in Sources */,
