@@ -7,20 +7,42 @@
 //
 
  /*
- AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
- NSDictionary *parameters = @{@"foo": @"bar"};
- NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
- [manager POST:@"http://example.com/resources.json" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
- [formData appendPartWithFileURL:filePath name:@"image" error:nil];
- } success:^(AFHTTPRequestOperation *operation, id responseObject) {
- NSLog(@"Success: %@", responseObject);
- } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
- NSLog(@"Error: %@", error);
- }];
  */
 
+#import "SWResource.h"
+#import "AFNetworking.h"
 #import "SWPostResourceService.h"
 
+@interface SWPostResourceService ()
+
+@end
+
 @implementation SWPostResourceService
+
+- (void)createResource:(SWResource *)res fromController:(id)aController {
+  
+  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+  
+  NSDictionary *parameters = @{
+                               @"resource[name]": res.name,
+                               @"resource[link]": res.link,
+                               @"resource[description]": res.description
+                                  };
+ 
+  
+  [manager POST:@"http://curso.softwhisper.es/resource.json"
+    parameters:parameters
+   
+  success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    if ([aController respondsToSelector:@selector(updateView:)]) {
+      [aController performSelector:@selector(updateView:) withObject:@"OK"];
+    }
+    
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    if ([aController respondsToSelector:@selector(updateView:)]) {
+      [aController performSelector:@selector(updateView:) withObject:@"KO"];
+    }
+  }];
+}
 
 @end
