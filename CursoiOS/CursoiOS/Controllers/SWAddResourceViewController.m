@@ -7,7 +7,7 @@
 //
 #import "SWResource.h"
 #import "SWAddResourceViewController.h"
-
+#import "SWPostResourceService.h"
 @interface SWAddResourceViewController ()
 
 @end
@@ -94,7 +94,6 @@
   return YES;
 }
 
-
 - (IBAction)save:(id)sender {
 #ifndef NDEBUG
   NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
@@ -105,7 +104,30 @@
   [res setLink:_urlTextField.text];
   [res setDescription:_descTextField.text];
   
+  SWPostResourceService *ws = [[SWPostResourceService alloc] init];
+  [ws createResource:res fromController:self];
   
+  [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+}
+
+- (void)updateView:(NSString *)status {
+#ifndef NDEBUG
+  NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+  [MBProgressHUD hideHUDForView:self.view animated:YES];
+  
+  if ([status isEqualToString:@"OK"]) {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+  } else {
+    UIAlertView *alertView =
+    [[UIAlertView alloc] initWithTitle:@"Error"
+                               message:@"No se ha creado el recurso"
+                              delegate:nil
+                     cancelButtonTitle:@"Aceptar"
+                     otherButtonTitles:nil];
+    
+    [alertView show];
+  }
 }
 
 @end

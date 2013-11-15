@@ -24,6 +24,9 @@
 #endif
   
     [super viewDidLoad];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
   [self loadData];
 }
 

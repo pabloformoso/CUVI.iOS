@@ -30,7 +30,7 @@
                                   };
  
   
-  [manager POST:@"http://curso.softwhisper.es/resource.json"
+  [manager POST:@"http://curso.softwhisper.es/resources.json"
     parameters:parameters
    
   success:^(AFHTTPRequestOperation *operation, id responseObject) {
