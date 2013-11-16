@@ -288,7 +288,7 @@
                                 <connections>
                                     <outlet property="descLabel" destination="J8k-1R-drk" id="xV4-SL-mqw"/>
                                     <outlet property="titleLabel" destination="0Gy-xn-9Ax" id="7O1-dC-ljX"/>
-                                    <segue destination="DHd-oj-wiv" kind="push" id="TPq-17-HoT"/>
+                                    <segue destination="DHd-oj-wiv" kind="push" identifier="web_detail" id="TPq-17-HoT"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Cr-Lr-tDl">

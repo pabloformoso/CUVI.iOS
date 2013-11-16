@@ -140,9 +140,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   NSIndexPath *path = [self.collectionView.indexPathsForSelectedItems objectAtIndex:0];
   SWResource *res = [_resources objectAtIndex:path.row];
-  
-  if ([segue.destinationViewController respondsToSelector:@selector(setResource:)]) {
-    [segue.destinationViewController performSelector:@selector(setResource:) withObject:res];
+  if ([segue.identifier isEqualToString:@"web_detail"]) {
+    if ([segue.destinationViewController respondsToSelector:@selector(setResource:)]) {
+      [segue.destinationViewController performSelector:@selector(setResource:) withObject:res];
+    }
   }
 }
 
