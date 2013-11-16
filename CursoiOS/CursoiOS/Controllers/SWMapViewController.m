@@ -52,4 +52,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)locationUpdate:(CLLocation *)location {
+  
+}
+
+- (void)locationError:(NSError *)error {
+  
+}
+
 @end

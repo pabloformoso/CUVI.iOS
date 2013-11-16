@@ -195,9 +195,24 @@
                     <view key="view" contentMode="scaleToFill" id="lth-Yp-PzM">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiL-6S-LSa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OiL-6S-LSa" secondAttribute="bottom" type="default" id="0bR-rN-ruJ"/>
+                            <constraint firstAttribute="trailing" secondItem="OiL-6S-LSa" secondAttribute="trailing" type="default" id="H79-nJ-rxm"/>
+                            <constraint firstItem="OiL-6S-LSa" firstAttribute="leading" secondItem="lth-Yp-PzM" secondAttribute="leading" type="default" id="Hgc-dM-ASC"/>
+                            <constraint firstItem="OiL-6S-LSa" firstAttribute="top" secondItem="lth-Yp-PzM" secondAttribute="top" type="default" id="N0L-X4-pyu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="782-compass.png" id="OxO-vq-Cxd"/>
+                    <connections>
+                        <outlet property="mapView" destination="OiL-6S-LSa" id="n2h-Fg-G8z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2X-Co-Ppo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
