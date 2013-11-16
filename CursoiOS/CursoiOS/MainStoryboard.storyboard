@@ -159,6 +159,7 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="1FG-C0-e3K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2mQ-84-TdL"/>
                             <constraint firstItem="3Vb-UR-POT" firstAttribute="top" secondItem="2AC-bj-3Wr" secondAttribute="top" constant="94" type="default" id="9Me-un-mBd"/>
@@ -175,6 +176,9 @@
                             <constraint firstItem="3Vb-UR-POT" firstAttribute="baseline" secondItem="bSP-ar-BBH" secondAttribute="baseline" type="default" id="iSC-hr-gD2"/>
                             <constraint firstItem="TQi-WB-owH" firstAttribute="baseline" secondItem="QLu-8d-wBY" secondAttribute="baseline" type="default" id="nvg-0Q-fYN"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nA8-y3-a0B" appends="YES" id="VKo-oA-h3C"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Clase" id="bis-bQ-IYq"/>
                     <connections>
@@ -185,6 +189,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkC-vG-q1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nA8-y3-a0B">
+                    <connections>
+                        <action selector="back:" destination="gek-x8-iJ1" id="i24-ge-xVK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="763" y="-475"/>
         </scene>
@@ -199,6 +208,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiL-6S-LSa">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Wmc-dU-yhI" id="WK5-DR-sJU"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -466,6 +466,15 @@
 				CLASSPREFIX = SW;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Pablo Formoso Estada";
+				TargetAttributes = {
+					6ECD910F181AC7C00077F71C = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 6ECD910B181AC7C00077F71C /* Build configuration list for PBXProject "CursoiOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -644,6 +653,7 @@
 		6ECD912F181AC7C00077F71C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CursoiOS/CursoiOS-Prefix.pch";
 				INFOPLIST_FILE = "CursoiOS/CursoiOS-Info.plist";

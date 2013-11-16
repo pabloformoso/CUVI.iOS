@@ -33,10 +33,10 @@
     NSLog(@"[%@] %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
 #endif 
     
-    if ((newLocation.coordinate.latitude > oldLocation.coordinate.latitude + 0.002) ||
-        (newLocation.coordinate.latitude < oldLocation.coordinate.latitude - 0.002) ||
-        (newLocation.coordinate.longitude > oldLocation.coordinate.longitude + 0.002) ||
-        (newLocation.coordinate.longitude < oldLocation.coordinate.longitude - 0.002)){
+    if ((newLocation.coordinate.latitude > oldLocation.coordinate.latitude + 0.0000002) ||
+        (newLocation.coordinate.latitude < oldLocation.coordinate.latitude - 0.00000002) ||
+        (newLocation.coordinate.longitude > oldLocation.coordinate.longitude + 0.00000002) ||
+        (newLocation.coordinate.longitude < oldLocation.coordinate.longitude - 0.0000000002)){
         [self.delegate locationUpdate:newLocation];
     }
     

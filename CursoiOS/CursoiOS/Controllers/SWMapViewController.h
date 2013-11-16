@@ -11,7 +11,7 @@
 #import "SWLocationManager.h"
 
 @interface SWMapViewController :
- UIViewController <SWLocationManagerDelegate>
+ UIViewController <SWLocationManagerDelegate, MKMapViewDelegate, MKOverlay>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
